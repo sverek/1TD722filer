@@ -1,0 +1,28 @@
+# Things that should work from start
+1+2*(5-2) = y
+sin(2)*(sin(2)=x) + cos(2)*cos(2)
+
+# A3: Absolute value operator  | . | 
+|1|                     # Expects 1 
+|-1|                    # Expects 1  
+|2 - 3*4|               # Expects 10
+2*|exp(0)-2|            # Expects 2.0
+-||1-2|-|3-5||          # Expects -1
+-||1-2| - |3-5||        # Expects -1
+-||1-2| - |3 + |-5|||   # Expects -7
+|1-2                    # Expects SyntaxError
+|1-2||                  # Expects SyntaxError
+-||1-2| - |3 + |-5||    # Expects SyntaxError
+
+# A4: Several assignments in a statement
+2, 3, 4                 # Expected output: 2, 3, 4
+2=x, 3=y, x+y=z, 2*z    # Expected output: 2, 3, 5, 10
+ans                     # Expected output: 10
+5*ans=x, 3*ans          # Expected output: 50, 30
+ans - 10, 5             # Expected output: 20, 5
+ans                     # Expected output: 5 
+2=x, 3=y, x+y=z,        # Expects SyntaxError
+2, 3/(x-x), 3+4         # Expects EvaluationError
+ans                     # Expected output: 5 
+
+### Use q och quit to exit the calculator!
