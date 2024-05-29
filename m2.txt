@@ -180,9 +180,9 @@ def A3_A4():
                 print(
                     f"Error occurred at '{wtok.get_current()}' just after '{wtok.get_previous()}'"
                 )
-
-            except TokenError as te:
-                print("*** Syntax error: Unbalanced parentheses")
+            # removed during exam, not needed, if you end up here your code was wrong
+            # except TokenError as te:
+            #    print("*** Syntax error: Unbalanced parentheses") 
 
 ### A3, A4 STOP ###
 
